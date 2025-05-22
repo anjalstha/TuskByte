@@ -1,0 +1,7 @@
+{
+  "name": "tuskByteWebsite",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

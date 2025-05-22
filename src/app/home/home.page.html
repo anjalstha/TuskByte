@@ -1,0 +1,50 @@
+<ion-content #content [fullscreen]="true">
+  <div class="hero" [style.background-image]="'url(assets/images/anjal.jpeg)'">
+    <!-- <img src="assets/images/rhino3.jpg" alt="rhino" class="hero-image"> -->
+
+    <div class="logo-nav-container">
+      <p> &#64; Code By Anjal </p>
+      <!-- <img src="assets/images/logo-no-background.png" alt="Tusk Byte Logo" class="logo-image"> -->
+      <ion-buttons slot="end" class="nav-buttons">
+        <ion-button style="--color: grey" routerLink="/" href="#">Home</ion-button>
+        <ion-button routerLink="/team" href="#">Team</ion-button>
+        <!-- <ion-button routerLink="/partners" href="#">Partners</ion-button> -->
+        <ion-button routerLink="/About" href="#">About</ion-button>
+        <ion-button routerLink="/contact" href="#">Contact</ion-button>
+      </ion-buttons>
+    </div>
+
+    <div class="hero-text">
+      <h1>Anjal Shrestha</h1>
+      <!-- <p>A family office focused on providing capital and operational expertise to support and build meaningful & profitable businesses and real estate development</p> -->
+    </div>
+  </div>
+
+  <div class="arrow-down" [class.hidden]="isArrowHidden">
+    <img src="assets/images/arrow-down-white.png" class="arrow-down-image" (click)="scroll(content)">
+  </div>
+
+  <div class="about">
+    <h2>About Us</h2>
+    <div style="padding-left: 10%; padding-right: 10%;">
+      <p>TuskByte Innovations is a Utah-based family office investment firm that Teams closely with trusted partners to identify and fund passionate individuals who are committed to building businesses and develop or manage real estate that operates with purpose and profits.</p>
+      <p>We participate primarily in long term real estate and private equity opportunities and can provide capital at any stage of a company’s lifecycle. Our focus is on those projects and companies that create enduring value for the communities where they are located and for the investors who fund them.</p>
+      <p>TuskByte Innovations prides itself on being a trusted partner for business owners and our financial partners. We consider the people we Team with and the relationships we foster to be our greatest asset.</p>
+    </div>
+    <div class="buttons">
+      <ion-button routerLink="/team">Team</ion-button>
+      <ion-button routerLink="/partners">Partners</ion-button>
+      <ion-button routerLink="/About">About</ion-button>
+    </div>
+  </div>
+
+  <div class="footer">
+    <ion-title>TuskByte Innovations, LLC</ion-title>
+    <div class="footer-content">
+      <p>500 N Marketplace Drive</p>
+      <p>Suite 200</p>
+      <p>Centerville UT, 84014</p>
+      <p>801-809-6187</p>
+    </div>
+  </div>
+</ion-content>

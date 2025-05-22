@@ -1,0 +1,47 @@
+
+
+<ion-content #content [fullscreen]="true">
+  <div class="hero" [style.background-image]="'url(assets/images/rhino1.jpg)'">
+    <!-- <img src="assets/images/rhino3.jpg" alt="rhino" class="hero-image"> -->
+
+    <div class="logo-nav-container">
+      <img src="assets/images/logo-no-background.png" alt="Tusk Byte Logo" class="logo-image">
+      <ion-buttons slot="end" class="nav-buttons">
+        <ion-button routerLink="/" href="#">Home</ion-button>
+        <ion-button style="--color: grey" routerLink="/team" href="#">Team</ion-button>
+        <ion-button routerLink="/partners" href="#">Partners</ion-button>
+        <ion-button routerLink="/portfolio" href="#">Portfolio</ion-button>
+        <ion-button routerLink="/contact" href="#">Contact</ion-button>
+      </ion-buttons>
+    </div>
+
+    <div class="hero-text">
+
+      <h1>OUR TEAM</h1>
+    </div>
+  </div>
+
+  <div class="arrow-down" [class.hidden]="isArrowHidden">
+    <img src="assets/images/arrow-down-white.png" class="arrow-down-image" (click)="scroll(content)">
+  </div>
+
+  <div class="team-container">
+    <div class="team-member" *ngFor="let member of teamMembers">
+      <img [src]="member.image" alt="{{member.name}}">
+      <h3>{{member.name}}</h3>
+      <p>{{member.title}}</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <ion-title>TuskByte Innovations, LLC</ion-title>
+    <div class="footer-content">
+      <p>500 N Marketplace Drive</p>
+      <p>Suite 200</p>
+        <p>Centerville UT, 84014</p>
+      <p>801-809-6187</p>
+    </div>
+  </div>
+</ion-content>
+
+
